@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
 var pg = require('pg');
-var connectionString = process.env.DATABASE_URL || 'postgres://postgres:123456@localhost:5432/vncms';
+var connectionString = process.env.DATABASE_URL || 'postgres://postgres:123456@localhost:5432/nodetest';
 
 /* GET home page. */
 router.get('/', function (req, res, next) {
