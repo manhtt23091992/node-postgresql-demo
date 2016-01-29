@@ -8,7 +8,7 @@ router.get('/', function (req, res, next) {
     var status = req.param('status');
     if(typeof status !== 'undefined'){
         if(status == "1"){
-            res.render('index', {title: 'VN-CMS', status: "Sai tên đăng nhập hoặc mật khẩu"});
+            res.render('index', {title: 'VN-CMS', status: "Username or Password is invalid"});
         }
     }else{
         res.render('index', {title: 'VN-CMS'});
